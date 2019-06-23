@@ -1,0 +1,9 @@
+argparse
+numpy
+itertools
+imagehash
+gevent
+glob
+opencv-python
+shutil
+Pillow
