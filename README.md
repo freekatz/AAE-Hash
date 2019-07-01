@@ -42,7 +42,7 @@ base AAE and Hash, image match
 
    1. 安装 winsdksetup.exe，一直摁下一步直到结束，重启
 
-   2. 下载安装 cuDA 10.1、cuDNN 10.1
+   2. 下载安装 cuDA 10.0、cuDNN 适用于 cuDA 10.0 的版本（我的是 10.1 ，兼容性不太好）
 
       1. 安装 cuDA，一直摁下一步
       2. 解压 cuDNN，将其中的文件（如图）拷贝到 cuDA 安装路径（如图）
