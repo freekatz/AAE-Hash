@@ -28,8 +28,8 @@ class Pipeline(object):
 		'''
 		self.n_step = args.n_step
 		self.pool_size = args.pool_size
-		self.hash = Hash(hash_size=args.hash_size)
 		self.args = args
+		self.hash = Hash(hash_size=self.args.hash_size)
 		self.schedule()
 		
 	def multi(self, F, iterable):
