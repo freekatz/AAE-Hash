@@ -69,10 +69,10 @@ base AAE and Hash, image match
 
 ## 接口使用
 
-1. 单一图像 Hash（图中缺了一个n_step参数，无伤大雅）
+1. 单一图像 Hash
 
 ```
-python main.py --enc_p <input_img_path> --n_step 0
+python main.py --enc_p <input_img_path>
 ```
 
 ![one-hash](README.assets/one-hash.png)
