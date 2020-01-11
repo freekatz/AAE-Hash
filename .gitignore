@@ -111,9 +111,9 @@ imgs/*
 data/*
 input/*
 images/*
-*.jpg
-*.png
-*.jpeg
+imgs/*.jpg
+imgs/*.png
+imgs/*.jpeg
 
 # models
 *.pkl
