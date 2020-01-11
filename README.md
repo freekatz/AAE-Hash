@@ -34,7 +34,7 @@ base AAE and Hash, image match
 
 ## 项目结构
 
-![dir-struct](README.assets/dir-struct.png)
+![poj-struct](README.assets/poj-struct.png)
 
 时间原因，请自行创建对应文件夹即可
 
