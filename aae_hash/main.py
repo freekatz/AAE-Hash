@@ -14,7 +14,7 @@
 import argparse
 import os
 
-from pipiline import Pipeline
+from pipeline import Pipeline
 from setting import TRAIN_DIR
 
 #参数
@@ -43,7 +43,7 @@ parser.add_argument('--sample_interval', type=int, default=400, help='interval b
 
 args = parser.parse_args()
 
-# args.enc_p = "E:\\GitHub\\thefreer98\\aae_hash\\aae_hash\\tests\\enc"
+args.enc_p = "E:\\GitHub\\thefreer98\\aae_hash\\aae_hash\\tests\\ori\\4.jpg"
 # args.n_step = 3
 if args.ori_p != "":
 	if args.ori_p[-1]!="/" or args.ori_p[-1]!="\\":

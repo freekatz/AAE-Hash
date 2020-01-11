@@ -30,10 +30,16 @@ base AAE and Hash, image match
 2. 输入源图像路径，重训练/预训练模型
 3. 输入源/已处理过图像路径，批量返回图像 Hash
 
+
+
+## 项目结构
+
+![dir-struct](README.assets/dir-struct.png)
+
+时间原因，请自行创建对应文件夹即可
+
 ## 环境配置
 
-> 需要安装的 exe 文件放在 ../env/ 中
->
 > 操作系统请使用 Windows10
 >
 > 如果配置电脑 GPU 为英伟达的从第一步开始，否则直接跳过第一步
@@ -57,7 +63,7 @@ base AAE and Hash, image match
 
    直接安装很慢，先翻墙开全局代理下载安装链接中的 whl 文件在本地安装，注意选择与自己电脑适配的版本，地址：<https://pytorch.org/get-started/locally/>
 
-   ![1561272381956](README.assets/1561272381956.png)
+   ![torch](README.assets/torch.png)
 
    3. 安装其他包
 

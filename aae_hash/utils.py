@@ -89,7 +89,7 @@ imgTools = imgTools()
 def img_cut(path):
 	# print(path)
 	img = cv.imread(path)
-	#print(img.shape)
+	print(img.shape)
 	grayImg = imgTools.imgGray(img)
 	newImg = imgTools.imgConver(grayImg)
 	blurImg = imgTools.imgBlur(newImg)
@@ -119,10 +119,10 @@ def img_cut(path):
 	hight = y2 - y1
 	width = x2 - x1
 	cutImg = img[y1:y1 + hight, x1:x1 + width]
-	# cv.imwrite('test_save/haha.jpg', cutImg)
-	# cv.imshow('cut', cutImg)
-	# cv.waitKey()
-	# cv.destroyAllWindows()
+	cv.imwrite('./temp.jpg', cutImg)
+	cv.imshow('cut', cutImg)
+	cv.waitKey()
+	cv.destroyAllWindows()
 	return cutImg
 
 
