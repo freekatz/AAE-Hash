@@ -4,6 +4,8 @@
 
 base AAE and Hash, image match
 
+# thefreer 就是我，不要误会哦，名字没改而已
+
 ## 功能介绍
 
 1. 预处理
