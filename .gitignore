@@ -1,3 +1,9 @@
+# PC
+.idea/
+
+# models
+*.pkl
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -102,18 +108,3 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-
-# PC
-.idea/
-
-# img
-imgs/*
-data/*
-input/*
-images/*
-imgs/*.jpg
-imgs/*.png
-imgs/*.jpeg
-
-# models
-*.pkl
