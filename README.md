@@ -4,8 +4,6 @@
 
 base AAE and Hash, image match
 
-# thefreer 就是我，不要误会哦，名字没改而已
-
 ## 功能介绍
 
 1. 预处理
@@ -36,9 +34,21 @@ base AAE and Hash, image match
 
 ## 项目结构
 
-![poj-struct](README.assets/poj-struct.png)
+![poj-struct](res/README/poj-struct.png)
 
 时间原因，请自行创建对应文件夹即可
+
+## 效果展示
+
+#### 原始图像
+
+![origin](res/README/origin.jpg)
+
+#### 生成图像
+
+![gen](res/README/gen.png)
+
+**由于训练的轮次并不多，只有不到 5000 轮，所以生成的图像会有一些模糊**
 
 ## 环境配置
 
@@ -55,17 +65,17 @@ base AAE and Hash, image match
       1. 安装 cuDA，一直摁下一步
       2. 解压 cuDNN，将其中的文件（如图）拷贝到 cuDA 安装路径（如图）
 
-      ![cudnn](README.assets/cudnn.PNG)
+      ![cudnn](res/README/cudnn.PNG)
 
       ​	
 
-      ![cuda](README.assets/cuda.png)
+      ![cuda](res/README/cuda.png)
 
 2. 安装 Pytorch 及相关包
 
    直接安装很慢，先翻墙开全局代理下载安装链接中的 whl 文件在本地安装，注意选择与自己电脑适配的版本，地址：<https://pytorch.org/get-started/locally/>
 
-   ![torch](README.assets/torch.png)
+   ![torch](res/README/torch.png)
 
    3. 安装其他包
 
@@ -83,7 +93,7 @@ base AAE and Hash, image match
 python main.py --enc_p <input_img_path>
 ```
 
-![one-hash](README.assets/one-hash.png)
+![one-hash](res/README/one-hash.png)
 
 2. 重训练
 
@@ -93,7 +103,7 @@ python main.py --enc_p <input_img_path>
 python main.py --train 1 --retrain 1 --n_step 1
 ```
 
-![retrain](README.assets/retrain.png)
+![retrain](res/README/retrain.png)
 
 3. 预训练
 
@@ -103,7 +113,7 @@ python main.py --train 1 --retrain 1 --n_step 1
 python main.py --train 1 --n_step 1
 ```
 
-![train](README.assets/train.png)
+![train](res/README/train.png)
 
 4. 输入源路径，批量返回图像 Hash
 
@@ -111,7 +121,7 @@ python main.py --train 1 --n_step 1
 python main.py --ori_p <input_img_path> --n_step 3
 ```
 
-![many-hash-ori](README.assets/many-hash-ori.png)
+![many-hash-ori](res/README/many-hash-ori.png)
 
 5. 输入已处理图像路径，批量返回图像 Hash
 
@@ -119,13 +129,13 @@ python main.py --ori_p <input_img_path> --n_step 3
 python main.py --enc_p <input_img_path> --n_step 3
 ```
 
-![many-hash-enc](README.assets/many-hash-enc.png)
+![many-hash-enc](res/README/many-hash-enc.png)
 
 ## 其他说明
 
 1. 关于查询与索引，这个是数据库后台的任务，我不参与，不过我提供了两个函数，仅供参考，如图，代码位于 hash.Hash()：
 
-![hash](README.assets/hash.PNG)
+![hash](res/README/hash.PNG)
 
 
 
@@ -133,17 +143,17 @@ python main.py --enc_p <input_img_path> --n_step 3
 
 位置：pipeline.Pipeline.step_index(hash_strs)/step_query(hash_str)
 
-![hash-p1](README.assets/hash-p1.PNG)
+![hash-p1](res/README/hash-p1.PNG)
 
 
 
-位置：pipeline.Pipeline.schedule()![hash-p2](README.assets/hash-p2.PNG)
+位置：pipeline.Pipeline.schedule()![hash-p2](res/README/hash-p2.PNG)
 
 
 
 位置：pipeline.Pipeline.schedule()
 
-![hash-p3](README.assets/hash-p3.PNG)
+![hash-p3](res/README/hash-p3.PNG)
 
 2. 模型参数及其他参数
 
@@ -151,18 +161,18 @@ python main.py --enc_p <input_img_path> --n_step 3
 python main.py -h
 ```
 
-![help](README.assets/help.png)
+![help](res/README/help.png)
 
 或者，位置：main：
 
-![help-1](README.assets/help-1.PNG)
+![help-1](res/README/help-1.PNG)
 
 
 
 ## 声明
 
 1. 本项目，或者称为接口，由我一人开发 (__author__=TheFreer) ，商业使用请遵从 Apache2.0 协议，感谢配合。
-
-2. 本人由于考研再没有时间参与此项目，不会对此接口做任何维护。
-3. 对接口使用存在疑惑请在适当的时间联系我，感谢合作。
-4. 关于代码注释，暂时没时间写注释，以后估计也没有。
+2. **thefreer 就是我，不要误会哦，名字没改而已**
+3. 本人由于考研再没有时间参与此项目，不会对此接口做任何维护。
+4. 对接口使用存在疑惑请在适当的时间联系我，感谢合作。
+5. 关于代码注释，暂时没时间写注释，以后估计也没有。
